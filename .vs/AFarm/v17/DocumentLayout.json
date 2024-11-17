@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\uC548\uD604\uC6B0\\Desktop\\\uC720\uB2C8\uD2F0 \uC5F0\uC2B5\\AFarm\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|c:\\users\\\uC548\uD604\uC6B0\\desktop\\\uC720\uB2C8\uD2F0 \uC5F0\uC2B5\\afarm\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\afarm\\afarm\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|C:\\Users\\user\\Desktop\\AFarm\\AFarm\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|C:\\Users\\user\\Desktop\\AFarm\\AFarm\\assets\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|C:\\Users\\user\\Desktop\\AFarm\\AFarm\\assets\\scripts\\itemspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F57D659C-E71E-345D-05B6-DDABBDAAE50A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemSpawn.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\ItemSpawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ItemSpawn.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\ItemSpawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ItemSpawn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T09:45:23.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\Item.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Item.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\Item.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T09:45:20.681Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\\uC548\uD604\uC6B0\\Desktop\\\uC720\uB2C8\uD2F0 \uC5F0\uC2B5\\AFarm\\Assets\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "C:\\Users\\\uC548\uD604\uC6B0\\Desktop\\\uC720\uB2C8\uD2F0 \uC5F0\uC2B5\\AFarm\\Assets\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAuwDAAAAAgAAAA",
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:07:28.282Z",
+              "WhenOpened": "2024-11-16T09:45:09.163Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AFarm\\AFarm\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:07:28.282Z"
             }
           ]
         }

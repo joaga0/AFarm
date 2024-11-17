@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -23,13 +24,28 @@ public class Player : MonoBehaviour
         inputVec.x = Input.GetAxisRaw("Horizontal");  // user A/D input
         inputVec.y = Input.GetAxisRaw("Vertical");    // user W/S input
 
-        if (inputVec.x != 0 || inputVec.y != 0)       // Player move => ismove T / not move => ismove F 
-            anim.SetBool("ismove", true);
+        if (inputVec.x > 0)
+        {
+            anim.speed = 1;
+            anim.SetInteger("animation_state", 4);
+        }
+        else if (inputVec.x < 0)
+        {
+            anim.speed = 1;
+            anim.SetInteger("animation_state", 3);
+        }
+        else if (inputVec.y > 0)
+        {
+            anim.speed = 1;
+            anim.SetInteger("animation_state", 1);
+        }
+        else if (inputVec.y < 0)
+        {
+            anim.speed = 1;
+            anim.SetInteger("animation_state", 2);
+        }
         else
-            anim.SetBool("ismove", false);
-
-        anim.SetFloat("inputx", inputVec.x);
-        anim.SetFloat("inputy", inputVec.y);
+            anim.speed = 0;
 
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
@@ -65,7 +81,7 @@ public class Player : MonoBehaviour
 
         GameObject effect = Instantiate(attackEffect, attackPosition, Quaternion.identity);
 
-        effect.transform.position = new Vector3(effect.transform.position.x, effect.transform.position.y, 1f);
+        effect.transform.position = new Vector3(effect.transform.position.x, effect.transform.position.y, -1f);
 
         if (inputVec.x != 0 || inputVec.y != 0)
         {
