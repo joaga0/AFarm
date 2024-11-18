@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Health
   - Enemy
+  - tel1
+  - tel2
+  - tel3
+  - tel4
   layers:
   - Default
   - TransparentFX

@@ -15,8 +15,8 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        float RandomX = UnityEngine.Random.Range(-8.0f, 9f);
-        float RandomY = UnityEngine.Random.Range(-4f, 4.0f);
+        float RandomX = UnityEngine.Random.Range(-7.3f, 6.7f);
+        float RandomY = UnityEngine.Random.Range(-3.2f, 0.2f);
 
         gameObject.transform.position = new Vector2(RandomX, RandomY);
 

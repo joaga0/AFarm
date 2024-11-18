@@ -24,7 +24,7 @@ public class Scene : MonoBehaviour
 
     public void ClickStart()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Class1");
     }
 
     public IEnumerator FadeIn()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Player : MonoBehaviour
     public float speed;      // move speed var
 
     public GameObject attackEffect;
+    PlayerManager playerManager;
+    string currentSceneName;
 
     Rigidbody2D rigid;
     Animator anim;
@@ -17,6 +20,21 @@ public class Player : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        GameObject playerManagerObject = GameObject.Find("PlayerManager");
+        playerManager = playerManagerObject.GetComponent<PlayerManager>();
+
+        currentSceneName = SceneManager.GetActiveScene().name;
+
+        if (playerManager.teleport_num == 0)
+            gameObject.transform.position = new Vector2(0, 0);
+        else if (playerManager.teleport_num == 1 && currentSceneName == "Class1" || playerManager.teleport_num == 2 && currentSceneName == "Class2")
+            gameObject.transform.position = new Vector2(-8, 4);
+        else if (playerManager.teleport_num == 2 && currentSceneName == "Class1" || playerManager.teleport_num == 1 && currentSceneName == "Class2")
+            gameObject.transform.position = new Vector2(8, 4);
+        else if (playerManager.teleport_num == 3 && currentSceneName == "Class1" || playerManager.teleport_num == 4 && currentSceneName == "Class2")
+            gameObject.transform.position = new Vector2(0, 4);
+        else if (playerManager.teleport_num == 4 && currentSceneName == "Class1" || playerManager.teleport_num == 3 && currentSceneName == "Class2")
+            gameObject.transform.position = new Vector2(0, -4.5f);
     }
 
     void Update()
@@ -101,6 +119,42 @@ public class Player : MonoBehaviour
         Vector2 nextVec = inputVec.normalized * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
     }
-   
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        if (collision.CompareTag("tel1"))
+        {
+            playerManager.teleport_num = 1;
+            if (currentSceneName == "Class1")
+                SceneManager.LoadScene("Class2");
+            else
+                SceneManager.LoadScene("Class1");
+        }
+        else if (collision.CompareTag("tel2"))
+        {
+            playerManager.teleport_num = 2;
+            if (currentSceneName == "Class1")
+                SceneManager.LoadScene("Class2");
+            else
+                SceneManager.LoadScene("Class1");
+        }
+        else if (collision.CompareTag("tel3"))
+        {
+            playerManager.teleport_num = 3;
+            if (currentSceneName == "Class1")
+                SceneManager.LoadScene("Class2");
+            else
+                SceneManager.LoadScene("Class1");
+        }
+        else if (collision.CompareTag("tel4"))
+        {
+            playerManager.teleport_num = 4;
+            if (currentSceneName == "Class1")
+                SceneManager.LoadScene("Class2");
+            else
+                SceneManager.LoadScene("Class1");
+        }
+    }
 }
