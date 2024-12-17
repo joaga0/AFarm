@@ -19,7 +19,7 @@ public class ItemSpawn : MonoBehaviour
         randomEnemy = UnityEngine.Random.Range(0, 3);
         randomX = UnityEngine.Random.Range(-8.5f, 9f);
         randomY = UnityEngine.Random.Range(-5f, 4.5f);
- 
+
         RandomPos = new Vector2(randomX, randomY);
 
         GameObject newItem = Instantiate(item[randomItem]);
