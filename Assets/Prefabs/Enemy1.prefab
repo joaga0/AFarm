@@ -15,7 +15,10 @@ GameObject:
   - component: {fileID: 1943318597148352972}
   - component: {fileID: 138807307144885028}
   - component: {fileID: 1643308316833492307}
-  m_Layer: 0
+  - component: {fileID: -3566431548501037822}
+  - component: {fileID: 7066044042580644285}
+  - component: {fileID: 3911088262457697962}
+  m_Layer: 6
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -153,12 +156,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
 --- !u!50 &1943318597148352972
 Rigidbody2D:
   serializedVersion: 4
@@ -221,3 +224,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.2
   randomMoveTime: 2
+--- !u!114 &-3566431548501037822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442774132258357449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99effeeffd68de347b028bf6dc4f8e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+--- !u!114 &7066044042580644285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442774132258357449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bd1043da93c894e9815f2173590545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
+  healthSystem: {fileID: 0}
+--- !u!114 &3911088262457697962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442774132258357449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1197b821fd0036443b8a5e13e18158e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
