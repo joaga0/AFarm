@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 920208526}
   - component: {fileID: 920208522}
   - component: {fileID: 920208527}
+  - component: {fileID: 920208528}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -616,6 +617,7 @@ MonoBehaviour:
   inputVec: {x: 0, y: 0}
   speed: 3
   attackEffect: {fileID: 5451152222894130833, guid: eaba7c925b4d4c44ca690f0981b884f3, type: 3}
+  damage_amount: 1
 --- !u!70 &920208523
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -734,6 +736,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &920208528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920208519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d44e52181972843a63cfcfa72ecfe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max_health: 5
 --- !u!1 &996765157
 GameObject:
   m_ObjectHideFlags: 0

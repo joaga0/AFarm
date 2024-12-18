@@ -16,6 +16,15 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     Animator anim;
 
+    public float damage_amount = 0.5f;
+    private Player_Health player_Health;
+
+    private void Start()
+    {
+        player_Health = GetComponent<Player_Health>();
+    }
+    
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -123,6 +132,11 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
+
+        if (collision.CompareTag("Enemy")) 
+        {
+            player_Health.Take_Damage(damage_amount);
+        }
 
         if (collision.CompareTag("tel1"))
         {

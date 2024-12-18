@@ -387,6 +387,7 @@
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerManager.cs"
+"Assets/Scripts/Player_Health.cs"
 "Assets/Scripts/Scene.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
